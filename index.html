@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      position: relative;
+      isolation: isolate;
+      min-height: 100vh;
+      overflow: auto;
+      background:
+        radial-gradient(ellipse at 77% 20%, rgba(255, 244, 207, .88), transparent 24%),
+        linear-gradient(180deg, #5b9bcf 0%, #9bc9e7 53%, #e3dfcf 100%);
+      color: #163c55;
+      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 190px;
+      height: 48px;
+      border-radius: 999px;
+      background: #fff;
+      opacity: .58;
+      filter: blur(2px);
+      box-shadow:
+        34px -17px 0 -4px #fff,
+        81px -23px 0 0 #fff,
+        129px -12px 0 -5px #fff;
+    }
+
+    body::before {
+      top: 34vh;
+      left: 12vw;
+    }
+
+    body::after {
+      right: 10vw;
+      bottom: 17vh;
+      transform: scale(.8);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      padding: 32px;
+    }
+
+    @media (max-width: 600px) {
+      body::before { left: -90px; }
+      body::after { right: -100px; }
+      main { padding: 24px; }
+    }
+  </style>
+</head>
+
+
+<body>
+    
+    <main style="font-size: 22px; font-weight: bold;"><strong>融合圖片</strong></main>
+    <main>
+    <img src="workflow.png" alt="工作流程圖" style="width: 50%; max-width: 300px; height: auto;">
+     <img src="LINE_ALBUM261016_1.jpg" alt="工作流程圖" style="width: 50%; max-width: 185px; height: auto;">
+ 
+     </main>
+
+    <main style="font-size: 22px ; font-weight: bold;"><strong>工作流程圖</strong></main>
+    <main style="margin-top: 30px;">
+    <div class="side-by-side">
+    <div>
+    <img src="2026-10-16234801.png" alt="工作流程圖" style="width: 90%; max-width: 1000px; height: auto;">
+     </div> 
+     <main> </main >
+     <strong style="font-size: 22px; font-weight: bold;">正反提示詞</strong></main>
+     <main style="margin-top: 30px;">
+    <div class="side-by-side">
+     <img src="2026-10-16234814.png" alt="工作流程圖" style="width: 100%; max-width: 500px; height: auto;">
+    </div> 
+     <main> </main >
+   
+   <strong style="font-size: 22px; font-weight: bold;">生成的圖</strong></main>
+    <main >
+        
+    <img src="Qwen_image_2.1_00007.png" alt="工作流程圖" style="width: 50%; max-width: 300px; height: auto;">
+    </main>
+    <main style="margin-top: 30px;">
+    <div class="side-by-side">
+    
+    <strong style="font-size: 22px; font-weight: bold;">心得</strong></main>
+    <main style="padding: 10px 32px;">網頁好難打，而且comfyui生成的圖不知道為什麼還不是我的臉。</main>
+    <main> </main >
+</main>
+</body>
+
+</html>
